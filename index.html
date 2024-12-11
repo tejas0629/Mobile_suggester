@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Suggestion Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Find Your Perfect Smartphone</h1>
+    </header>
+    <main>
+        <form id="mobileForm">
+            <label for="budget">Enter Your Budget (₹):</label>
+            <input type="number" id="budget" name="budget" min="5000" required>
+
+            <fieldset>
+                <legend>Select Your Priority:</legend>
+                <label>
+                    <input type="radio" name="priority" value="camera" required>
+                    Good Camera Quality
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="processor">
+                    Good Processor
+                </label>
+                <label>
+                    <input type="radio" name="priority" value="battery">
+                    Good Battery
+                </label>
+            </fieldset>
+
+            <button type="submit">Find Phones</button>
+        </form>
+        <div id="results"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mobile Suggestion Tool</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
